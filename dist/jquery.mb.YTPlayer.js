@@ -449,7 +449,6 @@ var getYTPVideoID = function (url) {
         
         YTPlayer.wrapper.css({
           position : "absolute",
-          zIndex   : 0,
           minWidth : "100%",
           minHeight: "100%",
           left     : 0,
@@ -487,8 +486,7 @@ var getYTPVideoID = function (url) {
           YTPlayer.opt.containment.css({
             position     : "relative",
             paddingBottom: "56.25%",
-            overflow     : "hidden",
-            height       : 0
+            overflow     : "hidden"
           });
           YTPlayer.opt.containment.wrap(YTPlayer.inlineWrapper);
         }
